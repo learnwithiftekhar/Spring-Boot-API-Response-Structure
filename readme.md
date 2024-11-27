@@ -5,6 +5,7 @@ This project demonstrates Standardizing API Response Structure in Spring Boot, a
 
 The repository contains the source code for implementing this standardized response structure. Follow the steps below to clone and run the project in your environment.
 
+**Note:** I found a great article on medium on [The Best Way to Structure API Responses in Spring Boot](https://medium.com/@dulanjayasandaruwan1998/the-best-way-to-structure-api-responses-in-spring-boot-23eb6892daab) in medium. You can read that article. This project is based on that article. 
 ### Response Structure
 The following JSON structure is used to standardize all API responses:
 
