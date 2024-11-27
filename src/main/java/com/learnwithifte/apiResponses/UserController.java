@@ -33,15 +33,9 @@ public class UserController {
 
     }
     @GetMapping("/{id}")
-    public ResponseEntity<ApiResponse> getUser(@PathVariable int id) {
+    public ResponseEntity<ApiResponse<User>> getUser(@PathVariable int id) {
         User user = new User("John", "Doe", "john@doe.com");
-        ApiResponse<User> response = new ApiResponse<>(
-                "success",
-                "User retrived successfully",
-                user,
-                null
-        );
-        return ResponseEntity.ok(response);
+        return ResponseEntity.ok(ResponseUtil.success("User retrieved successfully", user, null));
     }
 
 }
